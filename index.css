@@ -1,0 +1,91 @@
+.container
+{
+    margin: 12% auto auto auto;
+    height: 60vh;
+    display: flex;
+    width: 30vw;
+    flex-direction: column;
+}
+h2
+{
+    margin: 0 auto 10% auto;
+}
+.input1
+{
+    display: flex;
+    flex-direction: row;
+    width: 29vw;
+    justify-content: center;
+}
+#add-task-button
+{
+    margin-left: 10px;
+    background-color: rgba(146, 67, 186, 43%);
+    color: rgba(255,255,255,43%);
+    border: none;
+    transition: all 200ms ease;
+}
+#add-task-button.selected
+{
+    background-color: rgba(146, 67, 186, 100%);
+    color: rgba(255,255,255,100%);
+    transition: all 200ms ease;
+}
+#add-task-button.selected:hover
+{
+    background-color: rgba(146, 67, 186, 80%);
+}
+.task
+{
+    margin-left:8px ;
+}
+#input-task
+{
+    width: 14vw;
+    border: none;
+    border-bottom:3px solid rgba(146, 67, 186, 43%);
+    transition: all 200ms ease;
+}
+#input-task:focus
+{
+    width: 17vw;
+    outline: none;
+    border-bottom: 4px solid rgba(146, 67, 186, 100%);;
+    transition: all 200ms ease;
+}
+#input-task.selected{
+    width: 17vw;
+    outline: none;
+    border-bottom: 4px solid rgba(146, 67, 186, 100%);;
+    transition: all 200ms ease;
+}
+ul
+{
+    padding: unset;
+    display: flex;
+    flex-direction: column-reverse;
+}
+li
+{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+.delete-btn
+{
+    background-color: white;
+    border: none;
+    color: white;
+    width: 8%;
+}
+.cross:hover
+{
+    opacity: 50%;
+}
+.obj{
+    display: none;
+}
+#cross
+{
+    display: none;
+}
