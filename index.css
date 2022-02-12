@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&family=Roboto&display=swap');
+body
+{
+    background: linear-gradient(31deg, rgba(255,133,249,1) 0%, rgba(44,255,149,1) 45%, rgba(71,255,255,1) 84%) no-repeat fixed center;
+}
 .container
 {
     margin: 12% auto auto auto;
@@ -8,7 +14,8 @@
 }
 h2
 {
-    margin: 0 auto 10% auto;
+    margin: 0 43% 10% auto;
+    font-family: 'Roboto', sans-serif;
 }
 .input1
 {
@@ -19,11 +26,13 @@ h2
 }
 #add-task-button
 {
+    width: 20%;
     margin-left: 10px;
     background-color: rgba(146, 67, 186, 43%);
     color: rgba(255,255,255,43%);
     border: none;
     transition: all 200ms ease;
+    border-radius: 7px;
 }
 #add-task-button.selected
 {
@@ -37,10 +46,16 @@ h2
 }
 .task
 {
+    font-family: 'Roboto', sans-serif;
     margin-left:8px ;
+    font-size: 23px;
 }
 #input-task
 {
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size: 17px;
+    font-weight: bolder;
+    background-color: rgba(0,0,0,0%);
     width: 14vw;
     border: none;
     border-bottom:3px solid rgba(146, 67, 186, 43%);
@@ -70,13 +85,18 @@ li
     display: flex;
     justify-content: space-between;
     list-style: none;
+    margin-top: 3%;
+    margin-bottom: 3%;
 }
 .delete-btn
 {
-    background-color: white;
+    background: none;
     border: none;
     color: white;
     width: 8%;
+}
+.cross{
+    background: none;
 }
 .cross:hover
 {
