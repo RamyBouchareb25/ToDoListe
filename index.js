@@ -1,15 +1,9 @@
 let button = document.getElementById("add-task-button"),
-inputField = document.getElementById("input-task"),
-svgElement = document.getElementById("cross"),
-bigList = document.getElementById("task-list"),
-taskCount = 0,
-// inputCheck = document.getElementById("checkbox1"),
-//     task1 = document.getElementById("task1"),
-//     task2 = document.getElementById("task2"),
-//     task3 = document.getElementById("task3"),
-    // inputCheck2 = document.getElementById("checkbox2"),
-    // inputCheck3 = document.getElementById("checkbox3"),
-     taskList = {};
+    inputField = document.getElementById("input-task"),
+    svgElement = document.getElementById("cross"),
+    bigList = document.getElementById("task-list"),
+    taskCount = 0,
+    taskList = {};
 function ObjectLength( object ) {
     let length = 0;
     for( let key in object ) {
@@ -102,33 +96,3 @@ inputField.addEventListener("focusout",() => {
                 button.click();
             }
         });
-/*inputCheck.addEventListener("click", () => {
-        if(inputCheck.checked) {
-            task1.style.textDecoration = "line-through";
-        } else {
-            task1.style.textDecoration = "";
-        }
-    });
-inputCheck2.addEventListener("click", () => {
-    if(inputCheck2.checked) {
-        task2.style.textDecoration = "line-through";
-    } else {
-        task2.style.textDecoration = "";
-    }
-});
-inputCheck3.addEventListener("click", () => {
-    if(inputCheck3.checked) {
-        task3.style.textDecoration = "line-through";
-    } else {
-        task3.style.textDecoration = "";
-    }
-});
-document.addEventListener("keydown", (event) => {
-    if(event.key == "m") {
-        taskList.push(Math.random());
-        let jsonFile = JSON.stringify(taskList);
-        localStorage.setItem("TaskList",jsonFile);
-        console.log(jsonFile);
-    }
-});*/
-
